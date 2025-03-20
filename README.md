@@ -39,24 +39,29 @@ The **FashionMNIST** dataset is a collection of grayscale images (**28x28 pixels
 
 1. **Clone this repository:**
    ```sh
-   git clone https://github.com/your-repo/autoencoders-pytorch.git
-   cd autoencoders-pytorch
+   git clone https://github.com/dhruv-pharasi/Autoencoders.git
    ```
 
-2. **Install dependencies:**
-   ```sh
-   pip install -r requirements.txt
-   ```
+2. **Upload the Jupyter notebook to Google Colab**
 
 3. **Run the Jupyter Notebook:**
-   ```sh
-   jupyter notebook
-   ```
 
 ## Results
 
 The trained autoencoders reconstruct images from the FashionMNIST dataset with varying levels of accuracy, depending on the architecture:
-- **CNN-based autoencoder** typically achieves better reconstruction quality compared to the feedforward autoencoder.
+- **CNN-based autoencoder** achieves better reconstruction quality compared to the feedforward autoencoder.
+
+### Performance Comparison (Pixel-by-Pixel Loss)
+To evaluate the reconstruction performance, we calculate the pixel-by-pixel loss between the original and reconstructed images. The loss function used is **Mean Absolute Error (MAE)**, which measures the average difference between the original pixel values and the reconstructed pixel values.
+
+The total loss represents the cumulative reconstruction error across all test images, while the mean loss per image is derived by dividing the total loss by the number of test images. Lower values indicate better reconstruction quality.
+
+| Model                      | Total Loss  | Mean Loss per Image |
+|----------------------------|------------|---------------------|
+| **Feedforward Autoencoder** | 81,101.66  | 8.11                |
+| **CNN Autoencoder**        | 32,882.54  | 3.29                |
+
+The CNN-based autoencoder achieves significantly lower reconstruction loss, indicating better reconstruction quality compared to the feedforward autoencoder.
 
 ## Future Improvements
 
