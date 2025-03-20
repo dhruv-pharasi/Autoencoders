@@ -70,4 +70,4 @@ The CNN-based autoencoder achieves significantly lower reconstruction loss, indi
 
 ## Author
 
-Dhruv Pharasi
+[Dhruv Pharasi](https://github.com/dhruv-pharasi)
