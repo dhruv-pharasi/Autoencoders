@@ -44,12 +44,11 @@ The **FashionMNIST** dataset is a collection of grayscale images (**28x28 pixels
 
 2. **Upload the Jupyter notebook to Google Colab**
 
-3. **Run the Jupyter Notebook:**
+3. **Run the Jupyter Notebook**
 
 ## Results
 
-The trained autoencoders reconstruct images from the FashionMNIST dataset with varying levels of accuracy, depending on the architecture:
-- **CNN-based autoencoder** achieves better reconstruction quality compared to the feedforward autoencoder.
+The trained autoencoders reconstruct images from the FashionMNIST test dataset with varying levels of accuracy, depending on the architecture. The **CNN-based autoencoder** achieves better reconstruction quality compared to the feedforward autoencoder.
 
 ### Performance Comparison (Pixel-by-Pixel Loss)
 To evaluate the reconstruction performance, we calculate the pixel-by-pixel loss between the original and reconstructed images. The loss function used is **Mean Absolute Error (MAE)**, which measures the average difference between the original pixel values and the reconstructed pixel values.
